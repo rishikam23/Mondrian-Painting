@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Painting</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color:#000;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px;
+      gap: 9px;
+    }
+    .box1{
+      background-color: #E72F24;
+    }
+    .box2{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .box3{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .box4{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .box5{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .box6{
+      background-color: #F0F1EC;
+      grid-row-start: 4;
+    }
+    .box7{
+      background-color: #F9D01E;
+      grid-column: 2;
+    }
+    .box8{
+      background-color: #232629;
+      grid-column: 3;
+    }
+    .box9{
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / 5 / 4;
+    }
+  </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+   </div>
+</body>
+
+</html>
